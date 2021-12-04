@@ -1,3 +1,29 @@
 .main {
-  @apply bg-white h-16;
+  @apply bg-white flex shadow-md pl-4 h-16 justify-between items-center;
+}
+.menuicon {
+  @apply px-5 lg:hidden  cursor-pointer;
+  color: rgba(4, 17, 29, 0.75);
+}
+.logo {
+  @apply flex;
+}
+.logo img {
+  @apply h-8 w-auto;
+}
+.searchbox {
+  @apply hidden  sm:flex h-11 w-96 p-3 rounded-lg items-center focus-within:shadow-md;
+  border: 1px solid rgb(229, 232, 235);
+}
+.searchbox input {
+  @apply h-10 w-full pl-4 focus:outline-none;
+}
+.searchIcon {
+  color: rgba(4, 17, 29, 0.75);
+}
+.menu {
+  @apply flex;
+}
+.menuItem {
+  @apply px-5 py-3 text-gray-600 hover:text-gray-900 font-semibold;
 }
