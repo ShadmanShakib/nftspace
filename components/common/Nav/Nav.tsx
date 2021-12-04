@@ -1,9 +1,9 @@
 import React from "react";
-
+import styles from "./Nav.module.css";
 export default function Nav() {
   return (
-    <div className="">
-      <h1>Nav</h1>
+    <div className={styles.main}>
+      <h1>3NFT</h1>
     </div>
   );
 }
