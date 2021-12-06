@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Nav.module.css";
-import { MenuIcon, SearchIcon, CloseIcon } from "@components/icons";
+import { MenuIcon, SearchIcon, CloseIcon, WalletIcon } from "@components/icons";
 export default function Nav() {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -25,6 +25,7 @@ export default function Nav() {
         <h1 className={styles.menuItem}>Stats</h1>
         <h1 className={styles.menuItem}>Accounts</h1>
         <h1 className={styles.menuItem}>Create</h1>
+        <WalletIcon className="h-6  w-6" />
       </div>
       <div onClick={() => setIsOpen(!isOpen)} className={styles.menuicon}>
         {isOpen ? (

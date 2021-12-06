@@ -22,7 +22,7 @@
   color: rgba(4, 17, 29, 0.75);
 }
 .menu {
-  @apply flex;
+  @apply flex items-center;
 }
 .menuItem {
   @apply px-5 py-3 text-gray-600 hover:text-gray-900 font-semibold;
