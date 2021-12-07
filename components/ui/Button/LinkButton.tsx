@@ -1,13 +1,20 @@
-import React from "react";
+import React, { Children } from "react";
+import s from "./Button.module.css";
+import cn from "classnames";
 interface LinkButtonProps {
-  href?: string;
-  title: string;
+  to?: string;
+  children?: React.ReactNode;
+  varient: "primary" | "secondary" | "tertiary";
 }
 function LinkButton(props: LinkButtonProps) {
-  const { href, title } = props;
+  const { to, children, varient } = props;
+  const rootClassNames = cn(s.root, {
+    [s.primary]: varient === "primary",
+    [s.secondary]: varient === "secondary",
+  });
   return (
-    <a className="" href={href}>
-      {title}
+    <a className={rootClassNames} href={to}>
+      {children}
     </a>
   );
 }
