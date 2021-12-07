@@ -1,2 +1,12 @@
 .main {
+  @apply text-center pt-8 px-5;
+}
+.title {
+  @apply text-center max-w-lg text-3xl font-bold;
+}
+.subtitle {
+  @apply text-center mt-5  text-xl text-gray-600;
+}
+.buttons {
+  @apply flex mt-5 items-center justify-center;
 }

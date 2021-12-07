@@ -29,9 +29,9 @@ export default function Nav() {
       </div>
       <div onClick={() => setIsOpen(!isOpen)} className={styles.menuicon}>
         {isOpen ? (
-          <MenuIcon className="fill-current" />
-        ) : (
           <CloseIcon className="fill-current" />
+        ) : (
+          <MenuIcon className="fill-current" />
         )}
       </div>
     </div>
