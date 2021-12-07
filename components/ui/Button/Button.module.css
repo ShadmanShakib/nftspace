@@ -1,0 +1,10 @@
+.root {
+  @apply inline-flex items-center border-blue-500 rounded justify-center  font-bold py-2 px-4 rounded-lg focus:outline-none;
+  border: 1px solid;
+}
+.primary {
+  @apply bg-blue-500 text-white;
+}
+.secondary {
+  @apply bg-white text-blue-500;
+}
