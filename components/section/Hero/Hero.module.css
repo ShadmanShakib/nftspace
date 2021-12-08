@@ -22,7 +22,7 @@
   height: 299px;
 }
 .cardfooter {
-  @apply flex  items-center p-4;
+  @apply flex  items-center p-4 justify-between;
 }
 .cardfooter img {
   @apply rounded-full h-10 w-10 mr-4;
