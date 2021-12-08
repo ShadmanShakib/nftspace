@@ -1,5 +1,8 @@
 .main {
-  @apply text-center pt-8 px-5;
+  @apply flex flex-col items-center;
+}
+.titleSection {
+  @apply text-center flex flex-col items-center pb-5 pt-8 px-5;
 }
 .title {
   @apply text-center max-w-lg text-3xl font-bold;
@@ -8,5 +11,23 @@
   @apply text-center mt-5  text-xl text-gray-600;
 }
 .buttons {
-  @apply flex mt-5 items-center justify-center;
+  @apply flex mt-5 mb-8;
+}
+.card {
+  @apply shadow-md rounded-lg;
+}
+.image {
+  @apply rounded-t-lg;
+  width: 355px;
+  height: 299px;
+}
+.cardfooter {
+  @apply flex  items-center p-4;
+}
+.cardfooter img {
+  @apply rounded-full h-10 w-10 mr-4;
+}
+.author h1 {
+  @apply text-lg font-semibold;
+  color: rgb(4, 17, 29);
 }
