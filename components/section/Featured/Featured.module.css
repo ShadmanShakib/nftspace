@@ -1,0 +1,27 @@
+.root {
+  @apply mt-10;
+}
+.title {
+  @apply text-2xl text-center;
+  @apply font-bold;
+}
+.card {
+  @apply mt-12 w-80 rounded-lg mx-auto;
+}
+.card img {
+  width: 440px;
+  @apply rounded-t-lg;
+}
+.cardfooter {
+  @apply text-center w-full rounded-b-lg bg-pink-400 text-white px-5 pt-5 pb-3;
+}
+.cardfooter h3 {
+  @apply font-bold text-2xl;
+}
+.cardfooter p {
+  @apply text-sm mt-5 mx-auto mb-1;
+}
+.cardfooter button {
+  @apply mt-5 h-8 border-white rounded-lg py-1 px-3 text-center;
+  border: 1px solid;
+}
