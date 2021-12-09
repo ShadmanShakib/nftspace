@@ -18,6 +18,9 @@ export default function TopCollection() {
           />
         );
       })}
+      <div className={s.buttonbox}>
+        <button className={s.button}>Go to ranking</button>
+      </div>
     </div>
   );
 }
