@@ -6,6 +6,7 @@ import {
   Featured,
   TopCollection,
   TopCategories,
+  Info,
 } from "@components/section";
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Featured />
       <TopCollection />
       <TopCategories />
+      <Info />
     </div>
   );
 };
