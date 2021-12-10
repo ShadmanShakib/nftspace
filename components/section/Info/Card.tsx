@@ -11,10 +11,10 @@ export default function Card(props: Props) {
   return (
     <div className={s.card}>
       <img src={url} alt="" className="" />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+      <div className={s.card_body}>
+        <h5 className={s.card_title}>{title}</h5>
 
-        <p className="card-text">{description}</p>
+        <p className={s.card_description}>{description}</p>
       </div>
     </div>
   );

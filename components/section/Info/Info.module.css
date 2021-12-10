@@ -1,2 +1,15 @@
 .root {
+  @apply grid grid-cols-1 content-center;
+}
+.title {
+  @apply text-center text-2xl font-bold;
+}
+.card {
+  @apply p-4 flex flex-col items-center;
+}
+.card_title {
+  @apply text-center text-lg font-semibold mt-4 mb-1;
+}
+.card_description {
+  @apply text-center text-gray-600;
 }
