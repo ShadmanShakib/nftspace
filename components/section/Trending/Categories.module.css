@@ -1,0 +1,26 @@
+.root {
+  @apply relative flex flex-col items-center justify-center;
+}
+.title {
+  @apply text-center text-2xl font-bold mt-10 mb-6;
+}
+/* Card */
+.card {
+  @apply inline-block rounded-lg shadow-md  relative mx-auto;
+}
+
+.card__image {
+  @apply object-cover w-full rounded-t-lg;
+}
+.card_imgs {
+  @apply flex  items-center justify-center relative;
+}
+.card_artist {
+  @apply absolute bg-white rounded-full p-2 z-10 h-14 w-14 -bottom-7;
+}
+.card_title {
+  @apply text-center text-lg font-semibold mb-2 mt-5;
+}
+.card_info {
+  @apply flex flex-col p-3 cursor-pointer items-center;
+}
