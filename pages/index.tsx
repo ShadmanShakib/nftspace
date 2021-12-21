@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { Nav } from "@components/common";
+import { Nav, Footer } from "@components/common";
 import {
   Hero,
   Featured,
@@ -24,6 +24,7 @@ const Home: NextPage = () => {
       <TopCategories />
       <Trending />
       <Info />
+      <Footer />
     </div>
   );
 };
