@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import React from "react";
-import { Nav, Footer } from "@components/common";
+import { Nav, Footer, DropDown } from "@components/common";
 import {
   Hero,
   Featured,
@@ -19,6 +19,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
+      <DropDown />
       <Hero />
       <Featured />
       <TopCollection />

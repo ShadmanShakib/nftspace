@@ -1,8 +1,9 @@
 import React from "react";
 import styles from "./Nav.module.css";
 import { MenuIcon, SearchIcon, CloseIcon, WalletIcon } from "@components/icons";
+import { useUI } from "libs/hooks";
 export default function Nav() {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const { isOpen, toggleMenu } = useUI();
   return (
     <div className={styles.main}>
       <div className={styles.logo}>
@@ -27,7 +28,7 @@ export default function Nav() {
         <h1 className={styles.menuItem}>Create</h1>
         <WalletIcon className="h-6  w-6 m-5" />
       </div>
-      <div onClick={() => setIsOpen(!isOpen)} className={styles.menuicon}>
+      <div onClick={toggleMenu} className={styles.menuicon}>
         {isOpen ? (
           <CloseIcon className="fill-current" />
         ) : (

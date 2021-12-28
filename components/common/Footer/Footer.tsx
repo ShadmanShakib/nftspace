@@ -30,7 +30,7 @@ function Footer() {
         <YouTube className={s.icon} />
       </div>
       <div className=" h-0.5 w-full bg-black" />
-      <div className="">
+      <div className="grid grid-cols-2 gap-6">
         <div>
           <div>Marketplace</div>
           <div>All</div>

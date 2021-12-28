@@ -1,0 +1,26 @@
+.root {
+  @apply w-full px-6 transition-all duration-300 ease-linear bg-gray-800 pb-5  fixed z-50;
+}
+.open {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.closed {
+  transform: translate3d(100%, 0, 0);
+  opacity: 0;
+}
+.searchbox {
+  @apply w-full flex items-center;
+}
+.searchbox input {
+  @apply w-full h-12 px-4 py-2 text-gray-200  focus:outline-none bg-gray-800;
+}
+.icon {
+  @apply h-6 w-6 fill-current text-gray-500;
+}
+.navitem {
+  @apply text-gray-300 font-semibold text-lg;
+}
+.btn {
+  @apply w-full text-white bg-blue-500 font-semibold  py-2 rounded-md mt-20;
+}

@@ -9,3 +9,5 @@ export { default as Instagram } from "./Instagram";
 export { default as Reddit } from "./Reddit";
 export { default as Discord } from "./Discord";
 export { default as YouTube } from "./YouTube";
+export { default as ExploreIcon } from "./Explore";
+export { default as RightArrow } from "./RightArrow";
