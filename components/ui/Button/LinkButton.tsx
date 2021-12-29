@@ -1,8 +1,9 @@
 import React, { Children } from "react";
 import s from "./Button.module.css";
+import Link from "next/link";
 import cn from "classnames";
 interface LinkButtonProps {
-  to?: string;
+  to: string;
   children?: React.ReactNode;
   varient: "primary" | "secondary" | "tertiary";
 }
@@ -13,9 +14,11 @@ function LinkButton(props: LinkButtonProps) {
     [s.secondary]: varient === "secondary",
   });
   return (
-    <a className={rootClassNames} href={to}>
-      {children}
-    </a>
+    <Link href={to}>
+      <a className={rootClassNames} href={to}>
+        {children}
+      </a>
+    </Link>
   );
 }
 

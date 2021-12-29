@@ -1,5 +1,5 @@
 .main {
-  @apply bg-white flex shadow-md pl-4 h-16 justify-between items-center;
+  @apply bg-white flex shadow-md pl-4 h-16 justify-between items-center sticky;
 }
 .menuicon {
   @apply px-5 lg:hidden  cursor-pointer;

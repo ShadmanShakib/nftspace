@@ -1,0 +1,6 @@
+.root {
+}
+
+.title {
+  @apply text-4xl text-center mt-10 leading-10;
+}

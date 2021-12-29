@@ -1,0 +1,10 @@
+.main {
+  @apply flex items-center overflow-auto;
+}
+
+.main li {
+  @apply px-5 py-3 relative flex items-center justify-center mt-8;
+}
+.item {
+  @apply whitespace-nowrap font-semibold text-center pb-2;
+}
