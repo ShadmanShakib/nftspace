@@ -15,7 +15,7 @@ function Hero() {
           <br /> marketplace
         </h2>
         <div className={styles.buttons}>
-          <LinkButton to="/Explore" varient="primary">
+          <LinkButton to="/explore" varient="primary">
             Explore
           </LinkButton>
 
