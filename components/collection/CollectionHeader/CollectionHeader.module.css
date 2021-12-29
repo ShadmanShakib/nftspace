@@ -1,0 +1,30 @@
+.main {
+}
+.banner {
+  @apply object-cover h-56;
+}
+.bottom {
+  @apply relative flex flex-col justify-center items-center;
+}
+.logo_container {
+  @apply absolute -top-16;
+}
+.logo {
+  @apply rounded-full;
+}
+.fresnel {
+  @apply flex justify-between w-full px-10 mt-6;
+}
+.title {
+  @apply text-4xl font-bold;
+}
+/* Dropdown */
+.dropdown {
+  @apply absolute w-48 bg-slate-500  text-white rounded-md shadow-lg  top-12 right-0;
+}
+.items {
+  @apply flex items-center border-b-2 py-2 border-gray-800;
+}
+.dropdown h1 {
+  @apply text-lg font-semibold;
+}

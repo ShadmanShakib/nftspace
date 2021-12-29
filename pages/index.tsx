@@ -19,14 +19,16 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Nav />
-      <DropDown />
-      <Hero />
-      <Featured />
-      <TopCollection />
-      <TopCategories />
-      <Trending />
-      <Info />
-      <Footer />
+      <div className=" overflow-hidden">
+        <DropDown />
+        <Hero />
+        <Featured />
+        <TopCollection />
+        <TopCategories />
+        <Trending />
+        <Info />
+        <Footer />
+      </div>
     </div>
   );
 };

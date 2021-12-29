@@ -5,7 +5,7 @@ import { useUI } from "libs/hooks";
 export default function Nav() {
   const { isOpen, toggleMenu } = useUI();
   return (
-    <div className="relative">
+    <div className="relative h-16">
       <div className={styles.main}>
         <div className={styles.logo}>
           <h1 className="font-bold text-lg text-white">NFTSpace</h1>
@@ -26,7 +26,7 @@ export default function Nav() {
         </div>
         <div onClick={toggleMenu} className={styles.menuicon}>
           {isOpen ? (
-            <CloseIcon className="fill-current" />
+            <CloseIcon className="fill-current " />
           ) : (
             <MenuIcon className="fill-current" />
           )}
