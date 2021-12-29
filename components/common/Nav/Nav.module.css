@@ -1,5 +1,7 @@
 .main {
-  @apply bg-white flex shadow-md pl-4 h-16 justify-between items-center sticky;
+  @apply fixed w-full flex shadow-md pl-4 h-16 z-50 justify-between items-center;
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.65);
 }
 .menuicon {
   @apply px-5 lg:hidden  cursor-pointer;

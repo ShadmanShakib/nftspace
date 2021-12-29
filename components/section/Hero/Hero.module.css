@@ -1,5 +1,5 @@
 .main {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center pt-16;
 }
 .titleSection {
   @apply text-center flex flex-col items-center pb-5 pt-8 px-5;
