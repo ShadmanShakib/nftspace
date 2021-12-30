@@ -5,3 +5,4 @@ export { default as TopCategories } from "./TopCategories";
 export { default as Info } from "./Info";
 export { default as Trending } from "./Trending";
 export { default as ExplorePageHeader } from "./ExplorePageHeader";
+export { default as FilterModal } from "./FilterModal";

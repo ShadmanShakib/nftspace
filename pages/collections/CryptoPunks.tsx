@@ -13,7 +13,7 @@ function CryptoPunks() {
         <CollectionHeader />
         <CollecitonBody />
       </div>
-      <Footer />
+
       {/* Filter */}
       <FilterButton />
     </div>
