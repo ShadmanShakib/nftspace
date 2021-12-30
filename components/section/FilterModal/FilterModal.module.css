@@ -1,3 +1,7 @@
 .main {
   @apply fixed w-full bg-gray-700;
 }
+.statusBtn {
+  @apply flex h-10  p-3 items-center justify-center border-gray-900 rounded-md m-1 text-white;
+  border-width: 1px;
+}
