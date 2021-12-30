@@ -1,2 +1,3 @@
 .main {
+  @apply fixed w-full bg-gray-700;
 }

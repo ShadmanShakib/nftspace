@@ -22,5 +22,5 @@
   border-width: 1px;
 }
 .cardBlock {
-  @apply flex flex-col items-center justify-center py-10 mx-3;
+  @apply grid gap-6 grid-cols-1 items-center justify-center py-10 mx-3;
 }

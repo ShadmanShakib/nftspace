@@ -1,13 +1,15 @@
 import React from "react";
 import s from "./FilterModal.module.css";
+import Header from "./Header";
+import FilterDropDown from "./FilterDropDown";
 function FilterModal() {
   return (
-    <div>
+    <div className={s.main}>
       <aside>
-        <div className="">
-          <button> Clear All</button>
-          <button>Done</button>
-        </div>
+        <Header />
+        <FilterDropDown title="Status">
+          <Header />
+        </FilterDropDown>
       </aside>
     </div>
   );
