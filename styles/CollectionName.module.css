@@ -1,3 +1,7 @@
 .main {
   @apply bg-slate-900 relative;
 }
+
+.open {
+  @apply overflow-hidden;
+}

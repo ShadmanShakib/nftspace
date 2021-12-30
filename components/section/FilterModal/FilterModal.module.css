@@ -1,7 +1,16 @@
 .main {
-  @apply fixed w-full bg-gray-700;
+  @apply fixed w-full transition-all duration-300 ease-in-out min-h-screen z-50 bg-gray-700;
 }
 .statusBtn {
   @apply flex h-10  p-3 items-center justify-center border-gray-900 rounded-md m-1 text-white;
   border-width: 1px;
+}
+
+.open {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+.closed {
+  transform: translate3d(-100%, 0, 0);
+  opacity: 0;
 }
