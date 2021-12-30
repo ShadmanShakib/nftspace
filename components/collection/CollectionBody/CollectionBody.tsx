@@ -1,13 +1,34 @@
 import React from "react";
-import { AiOutlineAppstore } from "react-icons/ai";
+import s from "./CollectionBody.module.css";
+import { SearchBox } from "@components/ui/Inputs";
+import Header from "./Header";
+import { AiFillAppstore } from "react-icons/ai";
+import { GrStatusInfoSmall } from "react-icons/gr";
 function CollectionBody() {
   return (
-    <div>
-      <div className="">
-        <div className="">
-          <AiOutlineAppstore size={20} />
-          <h1>Items</h1>
+    <div className={s.main}>
+      <Header />
+      <div className={s.search}>
+        <SearchBox />
+      </div>
+      <div className="px-3">
+        <div className="w-full flex  my-3">
+          <select className="flex-1 mr-2 focus:outline p-3 rounded-md  bg-gray-700 text-white border-0">
+            <option value="single item"> Single Items</option>
+            <option value="Bundles">Bundles</option>
+          </select>
+
+          <button className={s.btn_left}>
+            <GrStatusInfoSmall color="white" size={16} />
+          </button>
+          <button className={s.btn_right}>
+            <AiFillAppstore color="white" size={24} />
+          </button>
         </div>
+        <select className=" w-full focus:outline-none p-3 rounded-md  bg-gray-700 text-white border-0">
+          <option value="Price: Low to High">Price: Low to High</option>
+          <option value="Bundles">Bundles</option>
+        </select>
       </div>
     </div>
   );

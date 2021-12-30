@@ -1,5 +1,5 @@
 .main {
-  @apply bg-gray-700 text-white;
+  @apply text-white;
 }
 .banner {
   @apply object-cover h-56;

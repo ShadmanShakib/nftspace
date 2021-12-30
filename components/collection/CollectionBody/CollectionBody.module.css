@@ -1,0 +1,19 @@
+.main {
+}
+.menu {
+  @apply flex items-center justify-center;
+}
+.menuitem {
+  @apply flex items-center px-5 py-3;
+}
+.search {
+  @apply px-3;
+}
+.btn_left {
+  @apply flex h-12 w-12 items-center justify-center  rounded-l-md;
+  border-width: 1px;
+}
+.btn_right {
+  @apply h-12 w-12 flex items-center justify-center rounded-r-md;
+  border-width: 1px;
+}
