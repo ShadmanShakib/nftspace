@@ -2,6 +2,7 @@ import React from "react";
 import s from "../../styles/CollectionName.module.css";
 import { Nav, Footer, DropDown } from "@components/common";
 import { CollectionHeader, CollecitonBody } from "@components/collection";
+import { FilterButton } from "@components/ui/Button";
 function CryptoPunks() {
   return (
     <div className={s.main}>
@@ -13,6 +14,8 @@ function CryptoPunks() {
         <CollecitonBody />
       </div>
       <Footer />
+      {/* Filter */}
+      <FilterButton />
     </div>
   );
 }
