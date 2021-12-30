@@ -1,4 +1,5 @@
 .main {
+  @apply bg-gray-700 text-white;
 }
 .banner {
   @apply object-cover h-56;
@@ -17,6 +18,18 @@
 }
 .title {
   @apply text-4xl font-bold;
+}
+.statsbox {
+  @apply grid grid-flow-row grid-cols-2 border-2 place-content-center gap-5 place-items-center   mt-4 py-4 px-10 rounded-md;
+}
+.box {
+  @apply flex flex-col w-full h-full  items-center;
+}
+.statsbox h1 {
+  @apply text-lg font-semibold;
+}
+.iconbox {
+  @apply flex;
 }
 /* Dropdown */
 .dropdown {
