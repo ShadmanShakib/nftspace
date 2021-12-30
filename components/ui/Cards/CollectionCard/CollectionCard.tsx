@@ -1,15 +1,31 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-
-function CollectionCard() {
+import { VarifiedIcon, Ethereum } from "@components/icons";
+import s from "./CollectionCard.module.css";
+interface Props {
+  name: string;
+  creator: string;
+  img: string;
+}
+function CollectionCard(props: Props) {
+  const { name, creator, img } = props;
   return (
-    <div>
-      <img
-        alt=""
-        src="https://lh3.googleusercontent.com/Ip6otmNTPvgjStLuni0Hv92wYndlt6mdkYYJs224_JzUzaTn-h-CH8FtMEFNSavHrD1LJnZl76-gq16nS0vV4zvT7keEZwbrTzjF=w415"
-      />
-      <p>CryptoPunks</p>
-      <h1>CryptoPunks #4569</h1>
+    <div className={s.main}>
+      <img alt="" src={img} />
+      <div className={s.bottom}>
+        <div className={s.topline}>
+          <div className={s.creator}>
+            <p>{creator}</p>
+            <VarifiedIcon className="h-4 w-4 fill-current text-blue-700" />
+          </div>
+          <div className={s.price}>
+            <h3 className="mr-2 text-gray-300">last: </h3>
+            <Ethereum className="h-4 w-4" />
+            <h4 className="text-white ">33</h4>
+          </div>
+        </div>
+        <h1>{name}</h1>
+      </div>
     </div>
   );
 }

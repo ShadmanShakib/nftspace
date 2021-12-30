@@ -1,0 +1,24 @@
+.main {
+  @apply text-white rounded-t-md w-full;
+}
+.main img {
+  @apply rounded-t-md w-full;
+}
+.creator {
+  @apply flex items-center justify-start;
+}
+.bottom {
+  @apply bg-gray-700 rounded-b-md pt-2 pb-7 px-2;
+}
+.bottom p {
+  @apply text-sm text-gray-300;
+}
+.bottom h1 {
+  @apply font-semibold;
+}
+.topline {
+  @apply flex justify-between;
+}
+.price {
+  @apply flex items-center;
+}

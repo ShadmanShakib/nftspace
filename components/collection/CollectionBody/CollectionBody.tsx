@@ -4,6 +4,7 @@ import { SearchBox } from "@components/ui/Inputs";
 import Header from "./Header";
 import { AiFillAppstore } from "react-icons/ai";
 import { GrStatusInfoSmall } from "react-icons/gr";
+import { CollectionCard } from "@components/ui/Cards";
 function CollectionBody() {
   return (
     <div className={s.main}>
@@ -29,6 +30,13 @@ function CollectionBody() {
           <option value="Price: Low to High">Price: Low to High</option>
           <option value="Bundles">Bundles</option>
         </select>
+      </div>
+      <div className={s.cardBlock}>
+        <CollectionCard
+          name="CryptoPuncks #4569"
+          creator="CryptoPuncks"
+          img="https://lh3.googleusercontent.com/Ip6otmNTPvgjStLuni0Hv92wYndlt6mdkYYJs224_JzUzaTn-h-CH8FtMEFNSavHrD1LJnZl76-gq16nS0vV4zvT7keEZwbrTzjF=w415"
+        />
       </div>
     </div>
   );

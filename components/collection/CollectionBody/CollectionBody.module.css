@@ -1,10 +1,14 @@
 .main {
+  @apply mt-6 mb-2;
 }
 .menu {
-  @apply flex items-center justify-center;
+  @apply flex items-center justify-center text-white;
 }
 .menuitem {
   @apply flex items-center px-5 py-3;
+}
+.menuitem h1 {
+  @apply font-bold;
 }
 .search {
   @apply px-3;
@@ -16,4 +20,7 @@
 .btn_right {
   @apply h-12 w-12 flex items-center justify-center rounded-r-md;
   border-width: 1px;
+}
+.cardBlock {
+  @apply flex flex-col items-center justify-center py-10 mx-3;
 }
