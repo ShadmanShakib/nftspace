@@ -2,11 +2,11 @@
   @apply mt-10;
 }
 .title {
-  @apply text-2xl text-center;
+  @apply text-2xl text-center text-white;
   @apply font-bold;
 }
 .card {
-  @apply mt-12 w-80 rounded-lg mx-auto;
+  @apply w-[360px] block h-full float-left rounded-lg mx-auto;
 }
 .card img {
   width: 440px;
@@ -24,4 +24,17 @@
 .cardfooter button {
   @apply mt-5 h-8 border-white rounded-lg py-1 px-3 text-center;
   border: 1px solid;
+}
+
+/* Carousel */
+.carousel {
+  @apply relative max-w-[440px] flex flex-col items-center w-full;
+}
+.slick_track {
+  @apply flex items-center;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.carouselCard {
+  @apply w-[360px] block h-full float-left rounded-lg mx-auto;
 }

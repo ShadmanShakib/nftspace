@@ -1,9 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import s from "./Featured.module.css";
-function Card() {
+interface Props {
+  tabIndex?: number;
+}
+function Card(props: Props) {
   return (
-    <div className={s.card}>
+    <div tabIndex={props.tabIndex} className={s.card}>
       <img
         src="https://storage.opensea.io/static/promocards/rhymeslikedimez-promo.jpeg"
         alt="featured"
