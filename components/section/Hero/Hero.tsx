@@ -39,8 +39,8 @@ function Hero() {
               alt="author"
             />
             <div className={styles.author}>
-              <h1>CryptoPunk #4648</h1>
-              <h2>CryptoPunks</h2>
+              <h1 className={styles.name}>CryptoPunk #4648</h1>
+              <h2 className={styles.authorName}>CryptoPunks</h2>
             </div>
           </div>
           <button aria-label="Get featured" type="button">

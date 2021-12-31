@@ -22,12 +22,14 @@
   height: 299px;
 }
 .cardfooter {
-  @apply flex  items-center p-4 justify-between;
+  @apply flex  items-center p-4 justify-between bg-slate-500 rounded-b-md;
 }
 .cardfooter img {
   @apply rounded-full h-10 w-10 mr-4;
 }
-.author h1 {
-  @apply text-lg font-semibold;
-  color: rgb(4, 17, 29);
+.name {
+  @apply text-lg font-semibold text-white;
+}
+.authorName {
+  @apply text-blue-800 font-semibold;
 }
