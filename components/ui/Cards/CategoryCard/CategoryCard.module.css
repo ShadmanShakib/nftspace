@@ -1,2 +1,12 @@
 .main {
+  @apply rounded-md bg-gray-700;
+}
+.img {
+  @apply rounded-t-md;
+}
+.bottom {
+  @apply bg-gray-700  py-3 rounded-b-md text-center;
+}
+.name {
+  @apply text-white font-semibold;
 }
