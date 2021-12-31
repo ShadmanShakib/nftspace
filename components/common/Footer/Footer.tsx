@@ -23,16 +23,18 @@ function Footer() {
         <button className={s.btn}>Subscribe</button>
       </div>
       <div className={s.social}>
+        <a href="https://www.youtube.com/channel/UCzK0N1yGkd0IH95x3zQ1FcQ">
+          <YouTube className={s.icon} />
+        </a>
         <Reddit className={s.icon} />
         <Twitter className={s.icon} />
         <Instagram className={s.icon} />
         <Discord className={s.icon} />
-        <YouTube className={s.icon} />
       </div>
-      <div className=" h-0.5 w-full bg-black" />
-      <div className="grid grid-cols-2 gap-6">
+      <div className={s.line} />
+      <div className={s.gridContent}>
         <div>
-          <div>Marketplace</div>
+          <h1 className={s.gridTitle}>Marketplace</h1>
           <div>All</div>
           <div>NFTs</div>
           <div> New</div>
@@ -42,18 +44,20 @@ function Footer() {
           <div>Names</div>
         </div>
         <div className="">
-          <div className=""> My Account </div>
+          <h1 className={s.gridTitle}> My Account </h1>
           <div className="">Profile</div>
           <div className="">Favorites</div>
           <div className="">My Collections</div>
           <div className="">Settings</div>
         </div>
         <div className="">
-          <div className=""> Stats</div>
+          <h1 className={s.gridTitle}> Stats</h1>
           <div className="">Rankings</div>
           <div className="">Activity</div>
         </div>
-        <div className="">Resources</div>
+        <div className="">
+          <h1 className={s.gridTitle}>Resources</h1>
+        </div>
       </div>
     </div>
   );

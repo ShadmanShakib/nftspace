@@ -1,9 +1,10 @@
 .root {
   padding: 20px 0;
-  @apply flex flex-col items-center bg-gray-800 text-white px-6;
+  @apply flex flex-col items-center  text-white px-6;
+  background-color: rgb(4, 17, 29);
 }
 .inputGroup {
-  @apply flex flex-row items-center;
+  @apply flex flex-row items-center mt-3;
 }
 .root p {
   @apply text-center;
@@ -22,8 +23,17 @@
   outline: none;
 }
 .social {
-  @apply flex flex-row items-center;
+  @apply flex flex-row items-center my-3;
 }
 .icon {
-  @apply h-6 w-6 fill-current text-black;
+  @apply h-14 w-14 rounded-md p-3 mx-1 bg-gray-700 fill-current text-white;
+}
+.line {
+  @apply h-[1px] w-full bg-gray-700;
+}
+.gridContent {
+  @apply grid grid-cols-2 gap-6 w-full mt-3 text-center;
+}
+.gridTitle {
+  @apply text-white font-semibold mb-2;
 }
