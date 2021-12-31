@@ -3,6 +3,7 @@ import s from "./FilterModal.module.css";
 import Header from "./Header";
 import FilterDropDown from "./FilterDropDown";
 import StatusContent from "./StatusContent";
+import PriceContent from "./PriceContent";
 import cn from "classnames";
 import { useUI } from "@libs/hooks";
 function FilterModal() {
@@ -17,6 +18,9 @@ function FilterModal() {
         <Header onDone={closeFilterModal} />
         <FilterDropDown title="Status">
           <StatusContent />
+        </FilterDropDown>
+        <FilterDropDown title="Price">
+          <PriceContent />
         </FilterDropDown>
       </aside>
     </div>

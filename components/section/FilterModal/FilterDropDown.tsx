@@ -9,7 +9,7 @@ export default function FilterDropDown(props: Props) {
   const toggle = () => setIsOpen(!isOpen);
   const { title, children } = props;
   return (
-    <div className="">
+    <div className="border-b-[1px] border-gray-900">
       <button
         className="flex items-center py-5 px-3  text-white  w-full justify-between"
         onClick={toggle}

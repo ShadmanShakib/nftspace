@@ -4,9 +4,11 @@ interface Props {
 }
 export default function Header(props: Props) {
   return (
-    <div className="flex justify-between text-blue-500 py-4">
+    <div className="flex px-3 justify-between text-blue-500 py-4 border-b-[1px] border-gray-900">
       <button className="font-semibold">Clear All</button>
-      <button onClick={props.onDone}>Done</button>
+      <button className="font-semibold" onClick={props.onDone}>
+        Done
+      </button>
     </div>
   );
 }
