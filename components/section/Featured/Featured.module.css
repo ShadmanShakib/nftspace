@@ -27,14 +27,3 @@
 }
 
 /* Carousel */
-.carousel {
-  @apply relative max-w-[440px] flex flex-col items-center w-full;
-}
-.slick_track {
-  @apply flex items-center;
-  transform: translate3d(0px, 0px, 0px);
-}
-
-.carouselCard {
-  @apply w-[360px] block h-full float-left rounded-lg mx-auto;
-}
