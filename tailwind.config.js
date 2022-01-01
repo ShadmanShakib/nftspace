@@ -5,11 +5,13 @@ module.exports = {
   ],
 
   theme: {
-    color: {
-      bg1: "#13141b",
-      bg2: "#0070f3",
+    extend: {
+      colors: {
+        "primary-dark": "#0a092d",
+        "primary-light": "#F2F2F2",
+        "primary-dark-hover": "#0D0D0D",
+      },
     },
-    extend: {},
   },
   plugins: [],
 };

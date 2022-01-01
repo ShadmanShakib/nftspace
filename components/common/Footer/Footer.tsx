@@ -22,6 +22,9 @@ function Footer() {
         />
         <button className={s.btn}>Subscribe</button>
       </div>
+      <div className="">
+        <h1 className="text-center font-semibold text-xl mt-6">Get in Touch</h1>
+      </div>
       <div className={s.social}>
         <a href="https://www.youtube.com/channel/UCzK0N1yGkd0IH95x3zQ1FcQ">
           <YouTube className={s.icon} />
@@ -32,6 +35,9 @@ function Footer() {
         <Discord className={s.icon} />
       </div>
       <div className={s.line} />
+      <div className="">
+        <h1 className="mt-3 font-semibold text-xl mb-3">NFTSpace</h1>
+      </div>
       <div className={s.gridContent}>
         <div>
           <h1 className={s.gridTitle}>Marketplace</h1>

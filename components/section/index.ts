@@ -6,3 +6,4 @@ export { default as Info } from "./Info";
 export { default as Trending } from "./Trending";
 export { default as ExplorePageHeader } from "./ExplorePageHeader";
 export { default as FilterModal } from "./FilterModal";
+export { default as ItemHeader } from "./ItemHeader";

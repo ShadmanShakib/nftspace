@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./Hero.module.css";
 import { LinkButton } from "@components/ui";
 import { InfoIcon } from "@components/icons";
+import Link from "next/link";
 function Hero() {
   return (
     <div className={styles.main}>
@@ -25,29 +26,31 @@ function Hero() {
           </LinkButton>
         </div>
       </div>
-      <div className={styles.card}>
-        <img
-          className={styles.image}
-          alt="Feature Image"
-          src="https://lh3.googleusercontent.com/LPL9OgXmxE9ZrxeN-cGj01hOQGFM6MoHGE1qEPapFKzVIaaF-erA9JLdoOXBVR2GIYjB4J6xX1BFL27kkyQewkTZtsP3CdPiqX-qow=s0"
-        />
-        {/* Card footer */}
-        <div className={styles.cardfooter}>
-          <div className="flex items-center">
-            <img
-              src="https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s130"
-              alt="author"
-            />
-            <div className={styles.author}>
-              <h1 className={styles.name}>CryptoPunk #4648</h1>
-              <h2 className={styles.authorName}>CryptoPunks</h2>
+      <Link href="/items/id" passHref>
+        <div className={styles.card}>
+          <img
+            className={styles.image}
+            alt="Feature Image"
+            src="https://lh3.googleusercontent.com/LPL9OgXmxE9ZrxeN-cGj01hOQGFM6MoHGE1qEPapFKzVIaaF-erA9JLdoOXBVR2GIYjB4J6xX1BFL27kkyQewkTZtsP3CdPiqX-qow=s0"
+          />
+          {/* Card footer */}
+          <div className={styles.cardfooter}>
+            <div className="flex items-center">
+              <img
+                src="https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s130"
+                alt="author"
+              />
+              <div className={styles.author}>
+                <h1 className={styles.name}>CryptoPunk #4648</h1>
+                <h2 className={styles.authorName}>CryptoPunks</h2>
+              </div>
             </div>
+            <button aria-label="Get featured" type="button">
+              <InfoIcon className="" />
+            </button>
           </div>
-          <button aria-label="Get featured" type="button">
-            <InfoIcon className="" />
-          </button>
         </div>
-      </div>
+      </Link>
     </div>
   );
 }
