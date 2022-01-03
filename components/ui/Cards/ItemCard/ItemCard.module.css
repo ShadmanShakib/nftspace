@@ -9,5 +9,5 @@
 }
 
 .footer {
-  @apply flex w-full  items-center  py-3 text-gray-400 rounded-md;
+  @apply flex w-full  items-center  pt-6 text-gray-400 rounded-md;
 }

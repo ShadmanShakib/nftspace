@@ -16,10 +16,10 @@ function ItemCard() {
       />
       <div className={s.footer}>
         <h3>
-          Owned by <span>samyau</span>
+          Owned by <span className="text-blue-500 font-semibold">samyau</span>
         </h3>
-        <div className="flex items-center ">
-          <BsEyeFill size={20} className="fill-current text-gray-400" />
+        <div className="flex items-center ml-6 ">
+          <BsEyeFill size={20} className="fill-current mr-2 text-gray-400 " />
           <p className={s.viewCount}>7.2k views</p>
         </div>
       </div>
