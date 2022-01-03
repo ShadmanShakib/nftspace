@@ -4,12 +4,17 @@ import { VarifiedIcon } from "@components/icons";
 import { BiRevision } from "react-icons/bi";
 import { FiMoreVertical, FiShare2 } from "react-icons/fi";
 import { MdLaunch } from "react-icons/md";
-function ItemHeader() {
+interface Props {
+  creator: string;
+  name: string;
+}
+function ItemHeader(props: Props) {
+  const { creator, name } = props;
   return (
     <div className={s.main}>
       <div className={s.btnSection}>
         <div className={s.authorSection}>
-          <h1 className={s.author}>Cryptopunks</h1>
+          <h1 className={s.author}>{creator}</h1>
           <VarifiedIcon className={s.icon} />
         </div>
         <div className={s.btnGroup}>
@@ -28,7 +33,7 @@ function ItemHeader() {
         </div>
       </div>
       {/* name of the item */}
-      <h1 className={s.title}>CryptoPunk #5670</h1>
+      <h1 className={s.title}>{name}</h1>
     </div>
   );
 }

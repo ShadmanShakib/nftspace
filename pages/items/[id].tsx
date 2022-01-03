@@ -5,7 +5,7 @@ function CryptoItem() {
   return (
     <div className="bg-primary-dark text-white">
       <Layout>
-        <ItemHeader />
+        <ItemHeader name="#4494" creator="Bored Ape Yacht Club" />
         <h1 className="">CryptoItem</h1>
       </Layout>
     </div>
