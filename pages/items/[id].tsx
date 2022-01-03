@@ -8,6 +8,7 @@ function CryptoItem() {
       <Layout>
         <ItemHeader name="#4494" creator="Bored Ape Yacht Club" />
         <ItemCard />
+        <BuyCard />
       </Layout>
     </div>
   );

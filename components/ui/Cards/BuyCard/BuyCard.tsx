@@ -3,12 +3,13 @@ import s from "./BuyCard.module.css";
 import { BsClock } from "react-icons/bs";
 import { Ethereum } from "@components/icons";
 import { Button } from "@components/ui/Button";
-
+import cn from "classnames";
 const BuyCard: React.FC = () => {
+  const clockIcon = cn(s.icon, s.icon_clock);
   return (
     <div className={s.main}>
       <div className={s.header}>
-        <BsClock size={20} className="text-gray-400 stroke-current" />
+        <BsClock size={20} className={clockIcon} />
         sale ends July 1, 2022 at 11:17 pm (GMT)
       </div>
       <div className="">

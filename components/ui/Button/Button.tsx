@@ -9,8 +9,16 @@ interface Props {
 }
 function Button(props: Props) {
   const { title, variant, onClick, icon } = props;
+  const mainClassNames = cn(s.main, {
+    [s.primary]: variant === "primary",
+    [s.secondary]: variant === "secondary",
+    [s.tertiary]: variant === "tertiary",
+    [s.outline]: variant === "outline",
+    [s.link]: variant === "link",
+    [s.ghost]: variant === "ghost",
+  });
   return (
-    <button onClick={onClick}>
+    <button className={mainClassNames} onClick={onClick}>
       {icon}
       {title}
     </button>
