@@ -1,7 +1,7 @@
 import React from "react";
 import { Layout } from "@components/common";
 import { ItemHeader } from "@components/section";
-import { ItemCard } from "@components/ui/Cards";
+import { ItemCard, BuyCard } from "@components/ui/Cards";
 function CryptoItem() {
   return (
     <div className="bg-primary-dark text-white">
