@@ -1,2 +1,13 @@
 .main {
+  @apply rounded-md my-5;
+}
+.header {
+  @apply flex w-full justify-end items-center bg-gray-700 py-3 px-6 rounded-md;
+}
+.likeCount {
+  @apply ml-2 text-gray-300;
+}
+
+.footer {
+  @apply flex w-full  items-center  py-3 text-gray-400 rounded-md;
 }
