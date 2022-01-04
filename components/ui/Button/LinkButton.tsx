@@ -9,7 +9,7 @@ interface LinkButtonProps {
 }
 function LinkButton(props: LinkButtonProps) {
   const { to, children, varient } = props;
-  const rootClassNames = cn(s.root, {
+  const rootClassNames = cn(s.linkButton, {
     [s.primary]: varient === "primary",
     [s.secondary]: varient === "secondary",
   });

@@ -19,7 +19,7 @@ function Button(props: Props) {
   });
   return (
     <button className={mainClassNames} onClick={onClick}>
-      {icon}
+      {icon && <div className={s.icon}>{icon}</div>}
       {title}
     </button>
   );

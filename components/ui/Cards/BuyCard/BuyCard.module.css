@@ -1,13 +1,20 @@
 .main {
-  @apply flex flex-col w-full rounded-md;
+  @apply flex flex-col w-full rounded-md my-1 shadow-md;
 }
 .header {
-  @apply flex flex-row items-center  h-14 rounded-t-md;
+  @apply flex flex-row items-center  h-14 rounded-t-md px-6;
   background-color: rgb(32, 34, 37);
+}
+.header .title {
+  @apply text-gray-400;
 }
 .icon {
   @apply h-6 w-6 fill-current text-gray-400;
 }
 .icon_clock {
   @apply stroke-current mr-2;
+}
+.content {
+  @apply flex flex-col flex-1 p-3;
+  background-color: rgb(48, 51, 57);
 }
