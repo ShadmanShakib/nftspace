@@ -14,11 +14,11 @@ const BuyCard: React.FC = () => {
         <p className={s.title}>sale ends July 1, 2022 at 11:17 pm (GMT)</p>
       </div>
       <div className={s.content}>
-        <h1>Current price</h1>
-        <div className="flex  items-center">
-          <Ethereum className="h-10 w-6" />
-          <p className="text-xl font-bold">74.99</p>
-          <span>($289,001.36)</span>
+        <h1 className="text-gray-400">Current price</h1>
+        <div className="flex  items-center my-2">
+          <Ethereum className="h-6 w-6 mr-4" />
+          <p className="text-3xl font-bold mr-2">74.99</p>
+          <span className="text-gray-400">($289,001.36)</span>
         </div>
         <div className="flex flex-col">
           <Button
@@ -26,6 +26,7 @@ const BuyCard: React.FC = () => {
             variant="primary"
             icon={<IoWalletSharp size={20} />}
           />
+          <div className="h-2"></div>
           <Button title="Make offer" variant="secondary" />
         </div>
       </div>
