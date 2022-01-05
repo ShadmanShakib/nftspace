@@ -9,10 +9,25 @@
 }
 .secondary {
   @apply text-white;
-  background-color: rgb(53, 56, 64);
-  border: 1px solid rgb(21, 27, 34);
+  background-color: #353840;
+  border: 1px solid #151b22;
 }
 
 .linkButton {
   @apply py-2 px-5 font-semibold rounded-md;
+}
+
+/* Expandable btn */
+
+.expandBtn {
+  @apply border-t-[1px] border-border1 rounded-md;
+}
+.expandBtn .btn {
+  @apply bg-btn-bg p-5 flex items-center  text-white rounded-md w-full justify-between;
+}
+.expandBtn .btnLeft {
+  @apply flex items-center;
+}
+.expandBtn .icon {
+  @apply mr-3;
 }
