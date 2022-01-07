@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Nav.module.css";
 import { MenuIcon, SearchIcon, CloseIcon, WalletIcon } from "@components/icons";
 import { useUI } from "libs/hooks";
+import { BsPersonCircle } from "react-icons/bs";
 export default function Nav() {
   const { isOpen, toggleMenu } = useUI();
   return (
@@ -11,7 +12,7 @@ export default function Nav() {
           <h1 className="font-bold text-lg text-white">NFTSpace</h1>
         </div>
         <div className={styles.searchbox}>
-          <SearchIcon className="menuicon" />
+          <SearchIcon className={styles.searchIcon} />
           <input
             type="text"
             placeholder="Search items, collection, and accounts"
@@ -22,7 +23,10 @@ export default function Nav() {
           <h1 className={styles.menuItem}>Stats</h1>
           <h1 className={styles.menuItem}>Accounts</h1>
           <h1 className={styles.menuItem}>Create</h1>
-          <WalletIcon className="h-6  w-6 m-5" />
+        </div>
+        <div className={styles.container}>
+          <BsPersonCircle className={styles.userIcon} />
+          <WalletIcon className={styles.WalletIcon} />
         </div>
         <div onClick={toggleMenu} className={styles.menuicon}>
           {isOpen ? (
