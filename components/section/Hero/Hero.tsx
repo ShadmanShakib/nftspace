@@ -7,6 +7,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <div className={styles.main}>
+      <div className={styles.bgOverlay} />
       <div className={styles.titleSection}>
         <h1 className={styles.title}>
           Discover, collect, and sell extraodinary NFTs

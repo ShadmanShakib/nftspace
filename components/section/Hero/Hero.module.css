@@ -1,5 +1,11 @@
 .main {
-  @apply flex flex-col items-center;
+  @apply flex flex-col items-center  relative pb-10;
+}
+.bgOverlay {
+  @apply absolute inset-0   h-full w-full bg-black  opacity-30  bg-center bg-cover;
+  filter: blur(8px);
+  mask: linear-gradient(rgb(255, 255, 255), transparent);
+  background-image: url(https://lh3.googleusercontent.com/LPL9OgXmxE9ZrxeN-cGj01hOQGFM6MoHGE1qEPapFKzVIaaF-erA9JLdoOXBVR2GIYjB4J6xX1BFL27kkyQewkTZtsP3CdPiqX-qow=s0);
 }
 .titleSection {
   @apply text-center flex flex-col items-center pb-5 pt-8 px-5;
@@ -22,7 +28,8 @@
   height: 299px;
 }
 .cardfooter {
-  @apply flex  items-center p-4 justify-between bg-slate-500 rounded-b-md;
+  @apply flex  items-center p-4 justify-between  rounded-b-md;
+  @apply bg-gray-800;
 }
 .cardfooter img {
   @apply rounded-full h-10 w-10 mr-4;
