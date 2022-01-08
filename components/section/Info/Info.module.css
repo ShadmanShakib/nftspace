@@ -1,15 +1,19 @@
 .root {
-  @apply grid grid-cols-1 content-center;
+  @apply flex flex-col items-center;
 }
 .title {
-  @apply text-center text-2xl font-bold;
+  @apply text-center text-2xl font-bold text-white xl:text-3xl mb-10;
 }
+.cardBox {
+  @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4;
+}
+/* Card styles*/
 .card {
-  @apply p-4 flex flex-col items-center;
+  @apply p-4 flex flex-col items-center w-96;
 }
 .card_title {
-  @apply text-center text-lg font-semibold mt-4 mb-1;
+  @apply text-center text-lg text-white font-semibold mt-4 mb-1;
 }
 .card_description {
-  @apply text-center text-gray-600;
+  @apply text-center text-gray-400;
 }

@@ -25,8 +25,8 @@ const Home: NextPage = () => {
         <Featured />
         <TopCollection />
         <Trending />
-        <TopCategories />
         <Info />
+        <TopCategories />
         <Footer />
       </div>
     </div>
