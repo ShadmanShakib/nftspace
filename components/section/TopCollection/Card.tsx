@@ -18,8 +18,9 @@ function Card(props: Props) {
   });
   return (
     <div className={s.card}>
+      {/* Card Front */}
       <div className={s.card_front}>
-        <h4>{id}</h4>
+        <h4 className={s.card_id}>{id}</h4>
         <div className={s.author}>
           <img src={image} alt={title} />
           <div className="absolute bottom-0 right-2">
@@ -38,14 +39,14 @@ function Card(props: Props) {
           </div>
         </div>
         <div className="">
-          <h1>{title}</h1>
+          <h1 className={s.card_title}>{title}</h1>
           <div className="flex items-center">
             <Ethereum className="h-4 w-4 fill-current text-blue-700 mr-2" />
-            <p className="font-bold text-gray-700">{sell}</p>
+            <p className="font-bold text-gray-400">{sell}</p>
           </div>
         </div>
       </div>
-      <div className="">
+      <div className=" ">
         <h1 className={upClass}>{up}%</h1>
       </div>
     </div>
