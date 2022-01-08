@@ -1,8 +1,16 @@
 .root {
-  padding: 20px 0;
-  @apply flex flex-col items-center  text-white px-6;
-  background-color: rgb(4, 17, 29);
+  @apply flex flex-col items-center   p-5 text-white px-6;
+  background-color: #04111d;
 }
+/* Top section */
+.top_section {
+  @apply flex flex-col xl:flex-row items-center pb-6;
+}
+/* Left side */
+.top_leftside {
+  @apply xl:mr-20;
+}
+
 .inputGroup {
   @apply flex flex-row items-center mt-3;
 }
@@ -10,12 +18,13 @@
   @apply text-center;
 }
 .title {
+  @apply xl:text-xl text-white font-semibold mb-4;
 }
 .btn {
   @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded;
 }
 .inputField {
-  @apply flex-1 mr-3;
+  @apply flex-1 mr-3 xl:w-96;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
@@ -29,11 +38,21 @@
   @apply h-14 w-14 rounded-md p-3 mx-1 bg-gray-700 fill-current text-white;
 }
 .line {
-  @apply h-[1px] w-full bg-gray-700;
+  @apply h-[1px] w-full bg-gray-700 mb-6;
 }
 .gridContent {
   @apply grid grid-cols-2 gap-6 w-full mt-3 text-center;
 }
 .gridTitle {
   @apply text-white font-semibold mb-2;
+}
+/* Bottom section */
+.bottom_section {
+  @apply grid xl:grid-cols-5  place-content-center  grid-flow-row;
+}
+.nftSpace {
+  @apply w-52 text-left mr-2;
+}
+.grid_section {
+  @apply w-52 flex flex-col items-center;
 }
