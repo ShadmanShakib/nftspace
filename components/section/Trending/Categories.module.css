@@ -1,16 +1,16 @@
 .root {
-  @apply relative flex flex-col items-center justify-center;
+  @apply relative  flex flex-col items-center justify-center pb-20;
 }
 .title {
-  @apply text-center text-2xl font-bold mt-10 mb-6;
+  @apply text-center text-2xl xl:text-3xl font-bold mt-10 mb-10 text-white;
 }
 /* Card */
 .card {
-  @apply inline-block rounded-lg shadow-md  relative mx-auto;
+  @apply inline-block rounded-lg shadow-md bg-bglight w-[350px] relative mx-auto;
 }
 
 .card__image {
-  @apply object-cover w-full rounded-t-lg;
+  @apply object-cover w-[350px] h-[200px] rounded-t-lg;
 }
 .card_imgs {
   @apply flex  items-center justify-center relative;
@@ -19,8 +19,8 @@
   @apply absolute bg-white rounded-full p-2 z-10 h-14 w-14 -bottom-7;
 }
 .card_title {
-  @apply text-center text-lg font-semibold mb-2 mt-5;
+  @apply text-center text-white text-lg font-semibold mb-2 mt-5;
 }
 .card_info {
-  @apply flex flex-col p-3 cursor-pointer items-center;
+  @apply text-center text-gray-400 p-3;
 }
