@@ -14,7 +14,7 @@
 }
 
 .linkButton {
-  @apply py-2 px-5 font-semibold rounded-md;
+  @apply py-2 px-5 font-semibold rounded-md xl:w-40 text-center xl:py-3 hover:shadow-lg hover:bg-opacity-80;
 }
 
 /* Expandable btn */

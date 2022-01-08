@@ -1,5 +1,5 @@
 .main {
-  @apply flex flex-col items-center  relative pb-10;
+  @apply flex flex-col items-center  relative pb-10 xl:pt-20 xl:pb-20;
 }
 .bgOverlay {
   @apply absolute inset-0   h-full w-full bg-black  opacity-30  bg-center bg-cover;
@@ -7,14 +7,17 @@
   mask: linear-gradient(rgb(255, 255, 255), transparent);
   background-image: url(https://lh3.googleusercontent.com/LPL9OgXmxE9ZrxeN-cGj01hOQGFM6MoHGE1qEPapFKzVIaaF-erA9JLdoOXBVR2GIYjB4J6xX1BFL27kkyQewkTZtsP3CdPiqX-qow=s0);
 }
+.content {
+  @apply flex flex-col xl:flex-row items-center justify-center;
+}
 .titleSection {
-  @apply text-center flex flex-col items-center pb-5 pt-8 px-5;
+  @apply flex relative z-30 flex-col items-center xl:items-start  pb-5 pt-8 px-5 xl:mr-10;
 }
 .title {
-  @apply text-center max-w-lg text-3xl font-bold text-white;
+  @apply text-center xl:text-left max-w-lg text-3xl xl:text-5xl font-bold text-white;
 }
 .subtitle {
-  @apply text-center mt-5  text-xl text-gray-600;
+  @apply text-center xl:text-left mt-5  text-xl text-gray-400 xl:text-2xl;
 }
 .buttons {
   @apply flex mt-5 mb-8;
@@ -23,9 +26,7 @@
   @apply shadow-md rounded-lg;
 }
 .image {
-  @apply rounded-t-lg;
-  width: 355px;
-  height: 299px;
+  @apply rounded-t-lg h-[299px] w-[355px]  xl:h-[400px] xl:w-[450px]  object-cover;
 }
 .cardfooter {
   @apply flex  items-center p-4 justify-between  rounded-b-md;
