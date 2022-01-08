@@ -1,5 +1,5 @@
 .main {
-  @apply rounded-md bg-gray-700 shadow-md shadow-lime-500;
+  @apply rounded-md bg-gray-700 shadow-md shadow-black;
 }
 .img {
   @apply rounded-t-md;
