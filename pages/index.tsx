@@ -24,8 +24,8 @@ const Home: NextPage = () => {
         <Hero />
         <Featured />
         <TopCollection />
-        <TopCategories />
         <Trending />
+        <TopCategories />
         <Info />
         <Footer />
       </div>

@@ -3,15 +3,17 @@ import React from "react";
 import s from "./Categories.module.css";
 interface Props {
   title: string;
-  discription: string;
-  image: string;
+  description: string;
+  img: string;
+
+  creator: string;
 }
 export default function Card(props: Props) {
-  const { title, discription, image } = props;
+  const { title, description, img } = props;
   return (
     <div className={s.card}>
       <div className={s.card_imgs}>
-        <img className={s.card__image} src={image} alt={title} />
+        <img className={s.card__image} src={img} alt={title} />
         <div className={s.card_artist}>
           <img
             className={s.card_logo}
@@ -22,7 +24,7 @@ export default function Card(props: Props) {
       </div>
       <div className={s.card_info}>
         <div className={s.card_title}>{title}</div>
-        <div className={s.card_discription}>{discription}</div>
+        <div className={s.card_discription}>{description}</div>
       </div>
     </div>
   );
