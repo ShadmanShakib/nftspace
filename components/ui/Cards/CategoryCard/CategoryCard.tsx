@@ -11,7 +11,7 @@ function CategoryCard(props: Props) {
       <Image
         className={s.img}
         src="/images/domain-name.png"
-        width={300}
+        width={350}
         height={200}
         alt="Domain name"
       />
