@@ -1,8 +1,8 @@
 .root {
-  @apply mt-10;
+  @apply pt-20;
 }
 .title {
-  @apply text-3xl text-center font-bold mb-14;
+  @apply text-3xl text-center font-bold mb-14 text-white;
 }
 .buttonbox {
   @apply flex justify-center mt-8 mb-14;
@@ -13,16 +13,19 @@
 /* Card */
 
 .card {
-  @apply h-24 flex items-center p-4 justify-between max-w-md mx-auto;
+  @apply h-24 flex items-center p-4 justify-between max-w-md mx-auto w-96;
 }
 .card img {
   @apply h-12 w-12 mx-3 rounded-full;
 }
-.card h4 {
-  @apply text-lg font-bold;
+.card_id {
+  @apply text-lg font-bold text-white;
 }
 .author {
   @apply relative;
+}
+.card_title {
+  @apply text-white;
 }
 .card_front {
   @apply flex items-center;
