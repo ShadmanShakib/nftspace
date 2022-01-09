@@ -1,7 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import s from "./ExploreCard.module.css";
-function ExploreCard() {
+interface Props {
+  title?: string;
+  description?: string;
+}
+function ExploreCard(props: Props) {
   return (
     <div className={s.main}>
       <div className="relative w-full">
