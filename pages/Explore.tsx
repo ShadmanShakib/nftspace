@@ -13,7 +13,9 @@ const Explore: NextPage = () => {
       <DropDown />
       <main className={s.main}>
         <h1 className={s.title}>Explore Collections</h1>
-        <ExplorePageHeader />
+        <div className="overflow-auto">
+          <ExplorePageHeader />
+        </div>
         <div className="py-10 px-2 grid grid-cols-1 gap-6 xl:grid-cols-3">
           {ExploreList.map((item, index) => (
             <ExploreCard key={index} {...item} />
