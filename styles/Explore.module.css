@@ -1,6 +1,7 @@
-.root {
+.main {
+  @apply flex flex-col items-center text-white;
 }
 
 .title {
-  @apply text-4xl text-center mt-10 leading-10;
+  @apply text-4xl text-center mt-10 leading-10 font-semibold;
 }

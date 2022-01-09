@@ -1,6 +1,13 @@
 .main {
+  @apply max-w-sm;
 }
 .logo {
   @apply h-12 w-12 rounded-full absolute -bottom-6;
   left: 46%;
+}
+.footer {
+  @apply bg-bglight text-center pt-6 pb-5 px-5 rounded-b-md;
+}
+.description {
+  @apply text-sm text-gray-400 py-3;
 }

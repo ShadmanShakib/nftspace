@@ -2,7 +2,7 @@
   @apply fixed top-0 w-full flex shadow-md pl-4 h-16 z-50 justify-between items-center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: #000000a6;
 }
 .menuicon {
   @apply px-5 xl:hidden  cursor-pointer;
@@ -15,10 +15,10 @@
   @apply h-8 w-auto;
 }
 .searchbox {
-  @apply hidden bg-bglight flex-1 2xl:flex-auto ml-5  sm:flex h-11 w-96 xl:w-1/3 p-3 rounded-lg items-center focus-within:shadow-md;
+  @apply hidden bg-bglight flex-1 opacity-60 xl:mx-20 ml-5  sm:flex h-11 w-96 xl:w-1/3 p-3 rounded-lg items-center focus-within:shadow-md;
 }
 .searchbox input {
-  @apply h-10 w-full pl-4 focus:outline-none bg-bglight;
+  @apply h-10 w-full pl-4 focus:outline-none bg-bglight text-white;
 }
 .searchIcon {
   @apply text-gray-400 fill-current;
@@ -27,7 +27,7 @@
   @apply hidden xl:flex items-center;
 }
 .menuItem {
-  @apply px-5 py-3 text-gray-400 hover:text-white font-semibold;
+  @apply px-5 py-3 text-gray-400 hover:text-white font-semibold cursor-pointer;
 }
 /* Wallet & User Icon */
 .container {
