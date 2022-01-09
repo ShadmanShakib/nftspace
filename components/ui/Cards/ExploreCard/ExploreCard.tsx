@@ -7,11 +7,11 @@ interface Props {
 }
 function ExploreCard(props: Props) {
   return (
-    <div className={s.main}>
+    <main className={s.main}>
       <div className="relative w-full">
         <div className="h-52">
           <img
-            className="w-full h-full rounded-md "
+            className="w-full h-full rounded-t-md "
             src="https://lh3.googleusercontent.com/REykorDOFr9XZynNbKiAsVX5RpjdJUaws5VygZpBH0V9giWYKZGolHZJoVxY2tfU6K3pDC88pjYxSLRefQ-_tRxO1GfiF3ZOuQbr=h200"
             alt="name"
           />
@@ -24,13 +24,15 @@ function ExploreCard(props: Props) {
       </div>
       <div className={s.footer}>
         <h1 className="font-sembold text-xl">NameLess</h1>
-        <h3>by nameless</h3>
-        <p>
+        <h3>
+          by <span className="text-blue-600 font-semibold">nameless</span>
+        </h3>
+        <p className={s.description}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
           lobortis ut dolor ac fringilla. Sed id metus mauris.
         </p>
       </div>
-    </div>
+    </main>
   );
 }
 
