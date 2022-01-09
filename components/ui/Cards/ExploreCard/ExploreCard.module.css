@@ -9,5 +9,5 @@
   @apply bg-bglight text-center pt-6 pb-5 px-5 rounded-b-md;
 }
 .description {
-  @apply text-sm text-gray-400;
+  @apply text-sm text-gray-400 py-3;
 }
