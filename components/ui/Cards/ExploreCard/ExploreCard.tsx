@@ -3,7 +3,7 @@ import React from "react";
 import s from "./ExploreCard.module.css";
 function ExploreCard() {
   return (
-    <div className="w-full rounded-md ">
+    <div className={s.main}>
       <div className="relative w-full">
         <div className="h-52">
           <img
@@ -18,7 +18,7 @@ function ExploreCard() {
           alt="logo"
         />
       </div>
-      <div className="text-center mt-10">
+      <div className={s.footer}>
         <h1 className="font-sembold text-xl">NameLess</h1>
         <h3>by nameless</h3>
         <p>

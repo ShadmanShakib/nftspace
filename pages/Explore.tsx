@@ -7,14 +7,16 @@ import { ExplorePageHeader } from "@components/section";
 import { ExploreCard } from "@components/ui";
 const Explore: NextPage = () => {
   return (
-    <div className="">
+    <div className="bg-primary-dark">
       <Nav />
       <DropDown />
-      <h1 className={s.title}>Explore Collections</h1>
-      <ExplorePageHeader />
-      <div className="py-10 px-2">
-        <ExploreCard />
-      </div>
+      <main className={s.main}>
+        <h1 className={s.title}>Explore Collections</h1>
+        <ExplorePageHeader />
+        <div className="py-10 px-2">
+          <ExploreCard />
+        </div>
+      </main>
       <Footer />
     </div>
   );
