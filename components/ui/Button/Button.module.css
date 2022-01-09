@@ -11,8 +11,7 @@
 }
 .secondary {
   @apply text-white;
-  background-color: #353840;
-  border: 1px solid #151b22;
+  background: linear-gradient(90deg, #7928ca, #ff0080);
 }
 
 .linkButton {
