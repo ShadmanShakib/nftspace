@@ -27,7 +27,7 @@
   @apply hidden xl:flex items-center;
 }
 .menuItem {
-  @apply px-5 py-3 text-gray-400 hover:text-white font-semibold cursor-pointer;
+  @apply px-5 py-3 text-gray-400  hover:text-white font-semibold cursor-pointer;
 }
 /* Wallet & User Icon */
 .container {

@@ -36,7 +36,9 @@ function Footer() {
               <YouTube className={s.icon} />
             </a>
             <Reddit className={s.icon} />
-            <Twitter className={s.icon} />
+            <a href="https://www.twitter.com/shadmanshakib_">
+              <Twitter className={s.icon} />
+            </a>
             <Instagram className={s.icon} />
             <Discord className={s.icon} />
           </div>

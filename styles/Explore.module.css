@@ -1,5 +1,5 @@
 .main {
-  @apply flex flex-col items-center text-white;
+  @apply flex flex-col max-w-screen-xl mx-auto text-white;
 }
 
 .title {

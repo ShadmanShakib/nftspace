@@ -11,6 +11,7 @@ function ItemCard() {
         <p className={s.likeCount}>115</p>
       </div>
       <img
+        className={s.image}
         src="https://lh3.googleusercontent.com/ebEjooBuQozR9PBEmGBNdSN7sMkkj3KB17nEVexLg5_yyNg-cJhKB22jYIj5CwdTitU3lFldI1C-8mDTNnRw3TUL5UAMc9zaUkgIsw=w600"
         alt="item-image"
       />

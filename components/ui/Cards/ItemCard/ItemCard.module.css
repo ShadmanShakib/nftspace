@@ -1,11 +1,15 @@
 .main {
-  @apply rounded-md my-5;
+  @apply rounded-md my-5 max-w-[600px] mx-auto;
+  aspect-ratio: attt(200/242);
 }
 .header {
-  @apply flex w-full justify-end items-center bg-gray-700 py-3 px-6 rounded-md;
+  @apply flex w-full justify-end items-center bg-gray-700  py-3 px-6 rounded-t-md;
 }
 .likeCount {
   @apply ml-2 text-gray-300;
+}
+.image {
+  @apply bg-gray-700 rounded-b-md;
 }
 
 .footer {

@@ -3,13 +3,16 @@ import styles from "./Nav.module.css";
 import { MenuIcon, SearchIcon, CloseIcon, WalletIcon } from "@components/icons";
 import { useUI } from "libs/hooks";
 import { BsPersonCircle } from "react-icons/bs";
+import Link from "next/link";
 export default function Nav() {
   const { isOpen, toggleMenu } = useUI();
   return (
     <div className="relative h-16">
       <div className={styles.main}>
         <div className={styles.logo}>
-          <h1 className="font-bold text-lg text-white">NFTSpace</h1>
+          <h1 className="font-bold text-lg text-white">
+            <Link href="/">NFTSpace</Link>
+          </h1>
         </div>
         <div className={styles.searchbox}>
           <SearchIcon className={styles.searchIcon} />
@@ -19,7 +22,9 @@ export default function Nav() {
           />
         </div>
         <div className={styles.menu}>
-          <h1 className={styles.menuItem}>Explore</h1>
+          <h1 className={styles.menuItem}>
+            <Link href="/Explore">Explore</Link>
+          </h1>
           <h1 className={styles.menuItem}>Stats</h1>
           <h1 className={styles.menuItem}>Accounts</h1>
           <h1 className={styles.menuItem}>Create</h1>
