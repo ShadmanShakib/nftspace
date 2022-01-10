@@ -4,15 +4,15 @@ import { EXPLORE_DATA } from "@constants/ExploreData";
 
 function ExplorePageHeader() {
   return (
-    <ul className={s.main}>
+    <main className={s.main}>
       {EXPLORE_DATA.map((item, inx) => {
         return (
-          <li key={inx}>
+          <h1 key={inx}>
             <span className={s.item}>{item}</span>
-          </li>
+          </h1>
         );
       })}
-    </ul>
+    </main>
   );
 }
 
