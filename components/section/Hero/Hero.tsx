@@ -24,31 +24,31 @@ function Hero() {
             <LinkButton to="/" varient="secondary" title="Create" />
           </div>
         </div>
-        <Link href="/items/id" passHref>
-          <div className={styles.card}>
+        <div className={styles.card}>
+          <Link href="/items/id" passHref>
             <img
               className={styles.image}
               alt="Feature Image"
               src="https://lh3.googleusercontent.com/LPL9OgXmxE9ZrxeN-cGj01hOQGFM6MoHGE1qEPapFKzVIaaF-erA9JLdoOXBVR2GIYjB4J6xX1BFL27kkyQewkTZtsP3CdPiqX-qow=s0"
             />
-            {/* Card footer */}
-            <div className={styles.cardfooter}>
-              <div className="flex items-center">
-                <img
-                  src="https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s130"
-                  alt="author"
-                />
-                <div className={styles.author}>
-                  <h1 className={styles.name}>CryptoPunk #4648</h1>
-                  <h2 className={styles.authorName}>CryptoPunks</h2>
-                </div>
+          </Link>
+          {/* Card footer */}
+          <div className={styles.cardfooter}>
+            <div className="flex items-center">
+              <img
+                src="https://lh3.googleusercontent.com/BdxvLseXcfl57BiuQcQYdJ64v-aI8din7WPk0Pgo3qQFhAUH-B6i-dCqqc_mCkRIzULmwzwecnohLhrcH8A9mpWIZqA7ygc52Sr81hE=s130"
+                alt="author"
+              />
+              <div className={styles.author}>
+                <h1 className={styles.name}>CryptoPunk #4648</h1>
+                <h2 className={styles.authorName}>CryptoPunks</h2>
               </div>
-              <button aria-label="Get featured" type="button">
-                <InfoIcon className="" />
-              </button>
             </div>
+            <button aria-label="Get featured" type="button">
+              <InfoIcon className="" />
+            </button>
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   );
