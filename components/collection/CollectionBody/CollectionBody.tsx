@@ -10,7 +10,7 @@ function CollectionBody() {
     <main className={s.main}>
       <Header />
       {/* Buttons */}
-      <div className="flex flex-col xl:flex-row  xl:items-center w-full">
+      <div className="flex  flex-col xl:flex-row flex-nowrap justify-end   xl:items-center w-full">
         {/* Search Box */}
 
         <div className="flex-1">
