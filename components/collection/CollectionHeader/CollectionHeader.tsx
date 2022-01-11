@@ -7,13 +7,15 @@ import { VarifiedIcon } from "@components/icons";
 import { Ethereum } from "@components/icons";
 function CollectionHeader() {
   const [showDropDown, setShowDropDown] = React.useState(false);
+  const logoImg =
+    "https://lh3.googleusercontent.com/Ju9CkWtV-1Okvf45wo8UctR-M9He2PjILP0oOvxE89AyiPPGtrR3gysu1Zgy0hjd2xKIgjJJtWIc0ybj4Vd7wv8t3pxDGHoJBzDB=s130";
   return (
     <div className={s.main}>
       {/*eslint-disable-next-line @next/next/no-img-element */}
       <img
         alt="Banner Image"
         className={s.banner}
-        src="https://lh3.googleusercontent.com/48oVuDyfe_xhs24BC2TTVcaYCX7rrU5mpuQLyTgRDbKHj2PtzKZsQ5qC3xTH4ar34wwAXxEKH8uUDPAGffbg7boeGYqX6op5vBDcbA=h600"
+        src="https://lh3.googleusercontent.com/i5dYZRkVCUK97bfprQ3WXyrT9BnLSZtVKGJlKQ919uaUB0sxbngVCioaiyu9r6snqfi2aaTyIvv6DHm4m2R3y7hMajbsv14pSZK8mhs=h600"
       ></img>
       <div className={s.bottom}>
         <div className={s.logo_container}>
@@ -21,7 +23,7 @@ function CollectionHeader() {
             width={120}
             height={120}
             className={s.logo}
-            src="/images/cryptopunk_logo.png"
+            src="/images/ape.png"
             alt="logo"
           />
         </div>
@@ -37,8 +39,8 @@ function CollectionHeader() {
             {showDropDown && <DropDown />}
           </div>
         </div>
-        <div className="flex items-center">
-          <h1 className={s.title}>CryptoPunks</h1>
+        <div className="flex items-center mt-6">
+          <h1 className={s.title}>Bored Ape Yacht Club</h1>
           <VarifiedIcon className="h-8 w-8 fill-current text-blue-700" />
         </div>
         {/* Stats Box */}
@@ -57,19 +59,22 @@ function CollectionHeader() {
           </div>
           <div className={s.box}>
             <div className={s.iconbox}>
-              <Ethereum className="h-6 w-4" />
+              <Ethereum className="h-6 w-4 mr-3" />
               <h1 className="text-center">761.2k</h1>
             </div>
 
             <p>volume traded</p>
           </div>
         </div>
-        <div className=" text-center mt-6 px-6">
+        <div className=" text-center mt-6 px-6 text-gray-400">
           <span>
-            CryptoPunks launched as a fixed set of 10,000 items in mid-2017 and
-            became one of the inspirations for the ERC-721 standard. They have
-            been featured in places like The New York Times, Christie’s of
-            London, Art|Basel Miami, and The PBS NewsHour.
+            The Bored Ape Yacht Club is a collection of 10,000 unique Bored Ape
+            NFTs— unique digital collectibles living on the Ethereum blockchain.
+            Your Bored Ape doubles as your Yacht Club membership card, and
+            grants access to members-only benefits, the first of which is access
+            to THE BATHROOM, a collaborative graffiti board. Future areas and
+            perks can be unlocked by the community through roadmap activation.
+            Visit www.BoredApeYachtClub.com for more details.
           </span>
         </div>
       </div>
