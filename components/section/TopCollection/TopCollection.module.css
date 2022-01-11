@@ -1,5 +1,5 @@
 .root {
-  @apply pt-20;
+  @apply pt-20 max-w-screen-xl mx-auto;
 }
 .title {
   @apply text-3xl text-center font-bold mb-14 text-white;

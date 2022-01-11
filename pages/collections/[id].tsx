@@ -6,7 +6,7 @@ import { FilterButton } from "@components/ui/Button";
 import { FilterModal } from "@components/section";
 import { useUI } from "@libs/hooks";
 import cn from "classnames";
-function CryptoPunks() {
+function Id() {
   const { openFilterModal } = useUI();
 
   return (
@@ -26,4 +26,4 @@ function CryptoPunks() {
   );
 }
 
-export default CryptoPunks;
+export default Id;

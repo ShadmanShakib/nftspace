@@ -1,6 +1,6 @@
 .main {
-  @apply flex w-full px-2 rounded-md items-center bg-gray-700;
+  @apply flex  px-2 rounded-md items-center bg-gray-700;
 }
 .main input {
-  @apply flex-1  p-3 focus:outline-none bg-gray-700;
+  @apply p-3 focus:outline-none bg-gray-700;
 }

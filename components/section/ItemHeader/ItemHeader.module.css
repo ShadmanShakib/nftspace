@@ -1,5 +1,5 @@
 .main {
-  @apply px-3 pt-2;
+  @apply px-3 pt-2 lg:w-full;
 }
 .authorSection {
   @apply flex items-center;

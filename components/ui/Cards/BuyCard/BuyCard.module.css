@@ -15,6 +15,6 @@
   @apply stroke-current mr-2;
 }
 .content {
-  @apply flex flex-col flex-1 p-3;
+  @apply flex flex-col flex-1 p-3 rounded-b-md;
   background-color: rgb(48, 51, 57);
 }

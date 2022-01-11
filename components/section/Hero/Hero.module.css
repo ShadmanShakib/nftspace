@@ -23,10 +23,10 @@
   @apply flex mt-5 mb-8;
 }
 .card {
-  @apply shadow-md rounded-lg;
+  @apply shadow-md rounded-lg z-30;
 }
 .image {
-  @apply rounded-t-lg h-[299px] w-[355px]  xl:h-[400px] xl:w-[450px]  object-cover;
+  @apply rounded-t-lg h-[299px] w-[355px] cursor-pointer  xl:h-[400px] xl:w-[450px]  object-cover;
 }
 .cardfooter {
   @apply flex  items-center p-4 justify-between  rounded-b-md;

@@ -2,13 +2,13 @@
   @apply text-white;
 }
 .banner {
-  @apply object-cover h-56;
+  @apply object-cover h-56 w-full;
 }
 .bottom {
   @apply relative flex flex-col justify-center items-center;
 }
 .logo_container {
-  @apply absolute -top-16;
+  @apply absolute -top-16 p-1 bg-gray-800 rounded-full;
 }
 .logo {
   @apply rounded-full;
@@ -19,17 +19,21 @@
 .title {
   @apply text-4xl font-bold;
 }
+
+/* Starts box containg numbers */
 .statsbox {
-  @apply grid grid-flow-row grid-cols-2 border-2 place-content-center gap-5 place-items-center   mt-4 py-4 px-10 rounded-md;
+  @apply grid grid-flow-row grid-cols-2 lg:grid-cols-4 border-2 place-content-center gap-5 place-items-center   mt-4 py-4 px-10 rounded-md;
 }
 .box {
   @apply flex flex-col w-full h-full  items-center;
 }
 .statsbox h1 {
-  @apply text-lg font-semibold;
+  @apply text-xl font-semibold;
 }
 .iconbox {
   @apply flex;
+}
+.icon {
 }
 /* Dropdown */
 .dropdown {
